@@ -1,0 +1,26 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.7.RELEASE'
+}
+
+group 'com.ramgom'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'com.typesafe.akka:akka-actor_2.12:2.5.3'
+    compile 'com.typesafe.akka:akka-stream_2.12:2.5.3'
+    compile 'org.projectlombok:lombok:1.16.18'
+    compile 'com.opencsv:opencsv:4.0'
+    compile 'com.eatthepath:jvptree:0.2'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
